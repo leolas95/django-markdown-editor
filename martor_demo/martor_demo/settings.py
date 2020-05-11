@@ -11,11 +11,9 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 """
 
 import os
-import tempfile
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
@@ -27,13 +25,13 @@ SECRET_KEY = '93fs*#h77*vj&2#2f+!y=kifg0s&63768398a(kx126itq(*6r'
 DEBUG = True
 ALLOWED_HOSTS = ['*']
 MARTOR_ENABLE_CONFIGS = {
-    'emoji': 'true',       # to enable/disable emoji icons.
-    'imgur': 'true',       # to enable/disable imgur/custom uploader.
-    'mention': 'true',     # to enable/disable mention
-    'jquery': 'true',      # to include/revoke jquery (require for admin default django)
-    'living': 'false',     # to enable/disable live updates in preview
+    'emoji': 'true',  # to enable/disable emoji icons.
+    'imgur': 'true',  # to enable/disable imgur/custom uploader.
+    'mention': 'true',  # to enable/disable mention
+    'jquery': 'true',  # to include/revoke jquery (require for admin default django)
+    'living': 'false',  # to enable/disable live updates in preview
     'spellcheck': 'false',  # to enable/disable spellcheck in form textareas
-    'hljs': 'true',        # to enable/disable hljs highlighting in preview
+    'hljs': 'true',  # to enable/disable hljs highlighting in preview
 }
 
 # Application definition
@@ -79,7 +77,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'martor_demo.wsgi.application'
 
-
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
@@ -89,7 +86,6 @@ DATABASES = {
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
@@ -109,7 +105,6 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
 # Internationalization
 # https://docs.djangoproject.com/en/3.0/topics/i18n/
 
@@ -122,7 +117,6 @@ USE_I18N = True
 USE_L10N = True
 
 USE_TZ = True
-
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/

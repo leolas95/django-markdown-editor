@@ -1,5 +1,7 @@
 from django.test import TestCase
-from app.models import Post
+
+from martor_demo.app.models import Post
+
 
 class PostTestCase(TestCase):
     def testPost(self):
@@ -7,4 +9,3 @@ class PostTestCase(TestCase):
         self.assertEqual(post.title, "asdads")
         self.assertEqual(post.description, "desc")
         self.assertEqual(post.wiki, "post wiki")
-

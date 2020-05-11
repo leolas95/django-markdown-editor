@@ -1,10 +1,10 @@
-from django.db import models
+
 from django.contrib import admin
+from django.db import models
 
-from martor.widgets import AdminMartorWidget
 from martor.models import MartorField
-
-from app.models import Post
+from martor.widgets import AdminMartorWidget
+from martor_demo.app.models import Post
 
 
 class PostAdmin(admin.ModelAdmin):
@@ -13,5 +13,6 @@ class PostAdmin(admin.ModelAdmin):
         MartorField: {'widget': AdminMartorWidget},
         models.TextField: {'widget': AdminMartorWidget},
     }
+
 
 admin.site.register(Post, PostAdmin)
