@@ -4,7 +4,7 @@ from django.db import models
 
 from martor.models import MartorField
 from martor.widgets import AdminMartorWidget
-from martor_demo.app.models import Post
+from app.models import Post
 
 
 class PostAdmin(admin.ModelAdmin):
